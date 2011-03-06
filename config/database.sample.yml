@@ -1,0 +1,11 @@
+development: &defaults
+  adapter:  postgres
+  host:     localhost
+  port:     5432
+  database: confoosed_development
+  username: 
+  password: 
+
+test:
+  <<: *defaults
+  database: confoosed_test
