@@ -1,0 +1,54 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.0.5)
+    addressable (2.2.4)
+    daemons (1.1.0)
+    data_objects (0.10.3)
+      addressable (~> 2.1)
+    dm-core (1.1.0.rc2)
+      activesupport (~> 3.0.4)
+      addressable (~> 2.2.4)
+      i18n (~> 0.5.0)
+    dm-do-adapter (1.1.0.rc2)
+      data_objects (~> 0.10.2)
+      dm-core (~> 1.1.0.rc2)
+    dm-migrations (1.1.0.rc2)
+      dm-core (~> 1.1.0.rc2)
+    dm-postgres-adapter (1.1.0.rc2)
+      dm-do-adapter (~> 1.1.0.rc2)
+      do_postgres (~> 0.10.2)
+    dm-tags (1.1.0.rc2)
+      dm-core (~> 1.1.0.rc2)
+    dm-validations (1.1.0.rc2)
+      dm-core (~> 1.1.0.rc2)
+    do_postgres (0.10.3)
+      data_objects (= 0.10.3)
+    eventmachine (0.12.10)
+    i18n (0.5.0)
+    nokogiri (1.4.4)
+    rack (1.2.1)
+    shotgun (0.9)
+      rack (>= 1.0)
+    sinatra (1.2.0)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    tilt (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dm-core (~> 1.1.pre)
+  dm-migrations (~> 1.1.pre)
+  dm-postgres-adapter (~> 1.1.pre)
+  dm-tags (~> 1.1.pre)
+  dm-validations (~> 1.1.pre)
+  nokogiri (= 1.4.4)
+  shotgun
+  sinatra (~> 1.2.0)
+  thin

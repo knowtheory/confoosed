@@ -9,4 +9,6 @@ gems '~>1.1.pre', 'dm-core', 'dm-validations', 'dm-postgres-adapter', 'dm-migrat
 
 group 'development' do
   gem 'nokogiri', '1.4.4'
+  gem 'shotgun'
+  gem 'thin'
 end
