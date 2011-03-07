@@ -1,0 +1,10 @@
+<html>
+	<body>
+		<h1>Speakers</h1>
+		<dl>
+			<% speakers.each do |speaker| %>
+			<dt><a href="<%= url("speakers/#{speaker.id}")%>"><%= speaker.name %></a></dt><dd><%= speaker.affiliation %></dd>
+			<% end %>
+		</dl>
+	</body>
+</html>
