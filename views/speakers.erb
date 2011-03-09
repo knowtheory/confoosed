@@ -1,10 +1,6 @@
-<html>
-	<body>
-		<h1>Speakers</h1>
-		<dl>
-			<% speakers.each do |speaker| %>
-			<dt><a href="<%= url("speakers/#{speaker.id}")%>"><%= speaker.name %></a></dt><dd><%= speaker.affiliation %></dd>
-			<% end %>
-		</dl>
-	</body>
-</html>
+<h1>Speakers</h1>
+<ul>
+	<% speakers.each do |speaker| %>
+	<li><img src="<%= speaker.photo_url %>"/><p><a href="<%= url("speakers/#{speaker.id}")%>"><%= speaker.name %></a></p><p><%= speaker.affiliation || "&nbsp;" %></p></li>
+	<% end %>
+</ul>
